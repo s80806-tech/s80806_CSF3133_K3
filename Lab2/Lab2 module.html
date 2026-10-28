@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Profile</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Personal Profile</h1>
+        <p>This webpage contains my personal information.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#profile">Profile</a> |
+        <a href="#registration">Registration</a> |
+        <a href="#about">About</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="home">
+
+        <!-- Personal Information Table -->
+        <section id="profile">
+            <h2>My Personal Information</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Attribute</th>
+                    <th>Information</th>
+                    <th>Description</th>
+                </tr>
+
+                <tr>
+                    <td>Name</td>
+                    <td>Nurul Ileeya</td>
+                    <td>My full name</td>
+                </tr>
+
+                <tr>
+                    <td>Age</td>
+                    <td>21</td>
+                    <td>My current age</td>
+                </tr>
+
+                <tr>
+                    <td>Occupation</td>
+                    <td>Student</td>
+                    <td>My current occupation</td>
+                </tr>
+
+                <tr>
+                    <td>Favourite Subject</td>
+                    <td>Computer Science</td>
+                    <td>My favourite subject</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="registration">
+            <h2>Registration Form</h2>
+
+            <form action="#" method="post">
+
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="firstname" required>
+                <br><br>
+
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lastname" required>
+                <br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age">
+                <br><br>
+
+                <p>Gender:</p>
+
+                <input type="radio" id="male"
+                       name="gender" value="Male">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female"
+                       name="gender" value="Female">
+                <label for="female">Female</label><br>
+
+                <input type="radio" id="other"
+                       name="gender" value="Other">
+                <label for="other">Other</label>
+                <br><br>
+
+                <p>Favourite Hobbies:</p>
+
+                <input type="checkbox" id="reading"
+                       name="hobbies" value="Reading">
+                <label for="reading">Reading</label><br>
+
+                <input type="checkbox" id="gaming"
+                       name="hobbies" value="Gaming">
+                <label for="gaming">Gaming</label><br>
+
+                <input type="checkbox" id="sports"
+                       name="hobbies" value="Sports">
+                <label for="sports">Sports</label>
+                <br><br>
+
+                <label for="country">Country:</label><br>
+
+                <select id="country" name="country">
+                    <option value="malaysia">Malaysia</option>
+                    <option value="singapore">Singapore</option>
+                    <option value="indonesia">Indonesia</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+        </section>
+
+        <!-- Article -->
+        <section id="about">
+            <article>
+                <h2>About Me</h2>
+                <p>
+                    Hello! I am a student who is learning
+                    HTML and web development. I enjoy learning
+                    new computer skills and creating webpages.
+                </p>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2026 My Personal Profile</p>
+    </footer>
+
+</body>
+</html>

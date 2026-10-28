@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Programming Day</title>
+</head>
+
+<body>
+
+    <!-- 1. Header: Event name and tagline -->
+    <header>
+        <h1>Faculty Programming Day 2026</h1>
+        <p>Learn, Code, Innovate and Connect!</p>
+        <p>Date: 15 November 2026</p>
+    </header>
+
+    <!-- 2. Navigation: Links to page sections -->
+    <nav>
+        <a href="#about">About the Event</a> |
+        <a href="#schedule">Event Schedule</a> |
+        <a href="#register">Registration</a>
+    </nav>
+
+    <!-- 3. About Section: Introduction to the event -->
+    <section id="about">
+        <h2>About the Event</h2>
+
+        <p>
+            Faculty Programming Day is a one-day event organised
+            for students who are interested in programming and
+            technology. Students can learn new skills, share ideas
+            and explore future career opportunities.
+        </p>
+
+        <!-- Article 1: Introduction to the first speaker -->
+        <article>
+            <h3>Speaker 1: Introduction to Web Development</h3>
+            <p>
+                Mr. Ahmad is a web developer who will introduce
+                students to HTML and explain how websites are
+                created. Students will learn the basics of
+                building a webpage.
+            </p>
+        </article>
+
+        <!-- Article 2: Introduction to the second speaker -->
+        <article>
+            <h3>Speaker 2: Career Opportunities in IT</h3>
+            <p>
+                Ms. Sarah is an IT professional who will share
+                her experience in the technology industry.
+                She will discuss career opportunities and the
+                skills needed by future graduates.
+            </p>
+        </article>
+    </section>
+
+    <!-- 4. Schedule Section: Event timetable -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+
+        <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+
+            <tr>
+                <td>8:00 AM - 9:00 AM</td>
+                <td>Registration and Breakfast</td>
+                <td>Main Hall</td>
+                <td>Organising Committee</td>
+            </tr>
+
+            <tr>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Opening Ceremony</td>
+                <td>Main Hall</td>
+                <td>Event Director</td>
+            </tr>
+
+            <tr>
+                <td>10:00 AM - 11:00 AM</td>
+                <td>Introduction to Web Development</td>
+                <td rowspan="2">Computer Lab 1</td>
+                <td>Mr. Muhammad Asyraf</td>
+            </tr>
+
+            <tr>
+                <td>11:00 AM - 12:00 PM</td>
+                <td>HTML Practical Workshop</td>
+                <td>Ms. Ain Zureen</td>
+            </tr>
+
+            <tr>
+                <td>12:00 PM - 1:00 PM</td>
+                <td colspan="3">Lunch Break</td>
+            </tr>
+
+            <tr>
+                <td>1:00 PM - 2:30 PM</td>
+                <td>Programming Challenge</td>
+                <td>Computer Lab 2</td>
+                <td>Ms. Fasya Nasihah </td>
+            </tr>
+
+            <tr>
+                <td>2:30 PM - 3:30 PM</td>
+                <td>Career Opportunities in IT</td>
+                <td>Seminar Room</td>
+                <td>Ms. Nur Aqilah </td>
+            </tr>
+
+            <tr>
+                <td>3:30 PM - 4:30 PM</td>
+                <td>Prize Giving and Closing Ceremony</td>
+                <td>Main Hall</td>
+                <td>Event Director</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- 5. Registration Section: Student registration form -->
+    <section id="register">
+        <h2>Student Registration Form</h2>
+
+        <form action="register.html" method="post">
+
+            <!-- Student personal information -->
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required>
+            <br><br>
+
+            <label for="matric">Matric Number:</label><br>
+            <input type="text" id="matric" name="matric" required>
+            <br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- Year of study: Select only one option -->
+            <p>Year of Study:</p>
+
+            <input type="radio" id="year1" name="year" value="Year 1">
+            <label for="year1">Year 1</label><br>
+
+            <input type="radio" id="year2" name="year" value="Year 2">
+            <label for="year2">Year 2</label><br>
+
+            <input type="radio" id="year3" name="year" value="Year 3">
+            <label for="year3">Year 3</label><br>
+
+            <input type="radio" id="year4" name="year" value="Year 4">
+            <label for="year4">Year 4</label>
+            <br><br>
+
+            <!-- Session selection: Students can choose multiple sessions -->
+            <p>Sessions You Want to Join:</p>
+
+            <input type="checkbox" id="web" name="sessions" value="Web Development">
+            <label for="web">Web Development Workshop</label><br>
+
+            <input type="checkbox" id="html" name="sessions" value="HTML Workshop">
+            <label for="html">HTML Practical Workshop</label><br>
+
+            <input type="checkbox" id="challenge" name="sessions" value="Programming Challenge">
+            <label for="challenge">Programming Challenge</label><br>
+
+            <input type="checkbox" id="career" name="sessions" value="IT Career Talk">
+            <label for="career">IT Career Talk</label>
+            <br><br>
+
+            <!-- Programme selection: Drop-down list -->
+            <label for="programme">Programme or Faculty:</label><br>
+
+            <select id="programme" name="programme">
+                <option value="computer-science">Computer Science</option>
+                <option value="information-technology">Information Technology</option>
+                <option value="software-engineering">Software Engineering</option>
+                <option value="information-systems">Information Systems</option>
+            </select>
+            <br><br>
+
+            <!-- Submit the registration form -->
+            <button type="submit">Register Now</button>
+
+        </form>
+    </section>
+
+    <!-- 6. Footer: Organiser and copyright information -->
+    <footer>
+        <p>Organised by: Faculty Programming Day Committee</p>
+        <p>Copyright &copy; 2026 Faculty Programming Day</p>
+    </footer>
+
+</body>
+</html>

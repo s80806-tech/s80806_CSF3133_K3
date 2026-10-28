@@ -1,0 +1,186 @@
+1	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+
+    
+    <!-- HEADER: Displays the course title -->
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+
+    <!-- NAVIGATION: Links to the different sections of the page -->
+    <nav>
+        <a href="#results">Results</a> |
+        <a href="#form">Feedback Form</a> |
+        <a href="#comments">Student Comments</a>
+    </nav>
+
+    <!-- SECTION 1: Feedback summary table -->
+    <section id="results">
+        <h2>Feedback Summary</h2>
+
+        <table border="1">
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Rating</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Tables and Forms</td>
+                <td>4.2</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Semantic HTML</td>
+                <td>4.0</td>
+            </tr>
+
+            <!-- NEW: Week 4 and Week 5 share the same topic using rowspan -->
+            <tr>
+                <td>4</td>
+                <td rowspan="2">Mini Project</td>
+                <td>4.6</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>4.8</td>
+            </tr>
+
+            <!-- NEW: Average Rating uses colspan to span two columns -->
+            <tr>
+                <td colspan="2">Average Rating</td>
+                <td>4.42</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- SECTION 2: Feedback form for students -->
+    <section id="form">
+        <h2>Give Your Feedback</h2>
+
+        <form action="submit_feedback.php" method="post">
+
+            <!-- Text input for student name -->
+            <label for="fullname">Name:</label><br>
+            <input type="text" id="fullname" name="name" required>
+            <br><br>
+
+            <!-- Text input for student email -->
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- Radio buttons: All options use the same name -->
+            <p>Overall rating:</p>
+
+            <input type="radio" id="good" name="rating" value="Good">
+            <label for="good">Good</label><br>
+
+            <input type="radio" id="average" name="rating" value="Average">
+            <label for="average">Average</label><br>
+
+            <input type="radio" id="poor" name="rating" value="Poor">
+            <label for="poor">Poor</label>
+            <br><br>
+
+            <!-- Checkbox for lab attendance -->
+            <input type="checkbox" id="lab" name="lab" value="yes">
+            <label for="lab">I attended all labs</label>
+            <br><br>
+
+            <!-- NEW: Checkboxes for topics requiring more practice -->
+            <p>Topics I want more practice on:</p>
+
+            <input type="checkbox" id="html" name="practice" value="HTML">
+            <label for="html">HTML</label><br>
+
+            <input type="checkbox" id="tables" name="practice" value="Tables">
+            <label for="tables">Tables</label><br>
+
+            <input type="checkbox" id="forms" name="practice" value="Forms">
+            <label for="forms">Forms</label><br>
+
+            <input type="checkbox" id="semantic" name="practice" value="Semantic HTML">
+            <label for="semantic">Semantic HTML</label>
+            <br><br>
+
+            <!-- NEW: Dropdown list for student section or group -->
+            <label for="group">Section/Group:</label><br>
+
+            <select id="group" name="group">
+                <option value="A">Group A</option>
+                <option value="B">Group B</option>
+                <option value="C">Group C</option>
+            </select>
+            <br><br>
+
+            <!-- Submit button for the feedback form -->
+            <input type="submit" value="Submit Feedback">
+
+        </form>
+    </section>
+
+    <!-- SECTION 3: Student comments containing two articles -->
+    <section id="comments">
+        <h2>Student Comments</h2>
+
+        <!-- ARTICLE 1: First student's feedback -->
+        <article>
+            <h3>Ileeya</h3>
+            <p>
+                The HTML lessons are helpful and easy to understand.
+                I would like more practical exercises.
+            </p>
+        </article>
+
+        <!-- ARTICLE 2: Second student's feedback -->
+        <article>
+            <h3>Maisarah</h3>
+            <p>
+                I enjoyed learning about tables and forms.
+                More examples would help me improve my skills.
+            </p>
+        </article>
+    </section>
+
+    <!-- FOOTER: Displays organiser or course copyright information -->
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+
+</body>
+</html>
+
+<!--  LIST OF ERRORS 
+         Error 1: Incorrect DOCTYPE syntax. Corrected to <!DOCTYPE html>.
+         Error 2: Header was incorrectly closed using </head>.
+         Error 3: Rating heading used <td> instead of <th>.
+         Error 4: Table rows had missing or incorrectly placed cells.
+         Error 5: The Week 2 row used an incorrect colspan.
+         Error 6: The Semantic HTML row had a missing closing </td> tag.
+         Error 7: The form action URL contained an unnecessary space.
+         Error 8: The Name label's for attribute did not match the input id.
+         Error 9: Label closing tags had incorrect spacing.
+         Error 10:Radio buttons used different names and could be selected together.
+         Error 11: The checkbox label's for attribute did not match its input id.
+         Error 12: The form closing tag was misspelled as </from>.
+         Error 13: The copyright entity was missing its semicolon.
+         Error 14: An extra table row appeared outside the HTML document.
+         Error 15: Some table rows and cells were not properly closed.
+         Note: Original line numbers depend on the supplied copy.
+    -->
